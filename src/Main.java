@@ -1,5 +1,24 @@
 public class Main {
     public static void main(String[] args) {
+        /*
+        Point p = new Point (3,4);
+        Rectangle r1 = new Rectangle(p,3,4);
+        System.out.println(r1.counterforobject);
+        System.out.println(Rectangle.counter);
+        Rectangle r2= new Rectangle(p,5,6);
+        System.out.println(r1.counterforobject);
+        System.out.println(r2.counterforobject);
+        System.out.println(Rectangle.counter);
+        System.out.println(Integer.max(3,4));
+        System.out.println(Integer.parseInt("1"));
+        String a = new String("aaaa");
+        System.out.println(a);
+        System.out.println(r1);
+
+         */
+
+
+        /*
 
         Point p1 = new Point();
         String s1 = new String( "Ali");
@@ -18,7 +37,7 @@ public class Main {
         Point tLeft = new Point(3 ,4);
         Rectangle r1 = new Rectangle(
                 tLeft,
-                3,
+                -1,
                 4
         );
         System.out.println(r1.getSideA());
@@ -36,6 +55,19 @@ public class Main {
 
         c1.setRadius(-21);
         System.out.println(c1.getRadius());
+        */
+        Shape shape = new Shape(new Point(3,4));
+        Rectangle r = new Rectangle(new Point(3,4),5, 6);
+        System.out.println(r);
+        Circle c = new Circle(new Point(3,4));
+        System.out.println(c.area());
+        System.out.println(c.perimeter());
+        Triangle t = new Triangle(new Point(),5,6,7);
+        System.out.println(t);
+        System.out.println(t.area());
+        System.out.println(t.perimeter());
+
+
 
     }
 }
